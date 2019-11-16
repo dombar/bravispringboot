@@ -1,6 +1,6 @@
 # Exigências
-1 - Java - 1.8.x
-2 - Maven - 3.x.x
+1. Java - 1.8.x
+2. Maven - 3.x.x
 
 # Etapas para o build
 
@@ -16,19 +16,17 @@
  
 3 - Execute o aplicativo pelo Docker
 
- cd bravispringboot
- mvn package
- docker-compose -f docker-compose.yml up -d --build
+ - cd bravispringboot
+ - mvn package
+ - docker-compose -f docker-compose.yml up -d --build
  
 # Balanced Brackets
 
 Exemplo de requisição REST:
 
-POST - http://localhost:8080/balanced/
-Content-Type : application/json
-Body : {
-  "text":"[]"
-}
+-  POST - http://localhost:8080/balanced/
+-  Content-Type : application/json
+-  Body : {"text":"[]"}
 
 # Contact List
 
@@ -36,34 +34,24 @@ Exemplo de requisição REST:
 
 1 - Listar todo os contatos:
 
-GET - http://localhost:8080/person/all
+- GET - http://localhost:8080/person/all
 
 2 - Listar apenas um contato:
 
-GET - http://localhost:8080/person/{id}
+- GET - http://localhost:8080/person/{id}
 
 3 - Salvar um contato
 
-POST - http://localhost:8080/person/
-Content-Type : application/json
-Body :{
-  "name":"xxxx",
-  "email":["xxxx@xx.xx"],
-  "phone":["999999999"],
-  "whatapp":["999999999"]
-}
+- POST - http://localhost:8080/person/
+- Content-Type : application/json
+- Body :{"name":"xxxx","email":["xxxx@xx.xx"],"phone":["999999999"],"whatapp":["999999999"]}
 
 4 - Editar um contato
 
-PUT - http://localhost:8080/person/{id}
-Content-Type : application/json
-Body :{
-  "name":"xxxx",
-  "email":["xxxx@xx.xx"],
-  "phone":["999999999"],
-  "whatapp":["999999999"]
-}
+- PUT - http://localhost:8080/person/{id}
+- Content-Type : application/json
+- Body :{"name":"xxxx","email":["xxxx@xx.xx"],"phone":["999999999"],"whatapp":["999999999"]}
 
 5 - Deletar um contato
 
-DELETE - http://localhost:8080/person/{id}
+- DELETE - http://localhost:8080/person/{id}
