@@ -1,6 +1,6 @@
 # Exigências
-Java - 1.8.x
-Maven - 3.x.x
+1 - Java - 1.8.x
+2 - Maven - 3.x.x
 
 # Etapas para o build
 
@@ -10,9 +10,9 @@ Maven - 3.x.x
 
 2 - Crie e execute o aplicativo usando o maven
 
- cd bravispringboot
- mvn package
- java -jar target/bravi-0.0.1-SNAPSHOT.jar
+ - cd bravispringboot
+ - mvn package
+ - java -jar target/bravi-0.0.1-SNAPSHOT.jar
  
 3 - Execute o aplicativo pelo Docker
 
